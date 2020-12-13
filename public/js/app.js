@@ -14,7 +14,7 @@ const forecastEl = document.querySelector(".forecast");
 function getWeatherForLocation(e) {
   e.preventDefault();
   const searchQuery = searchForm.value;
-  const requestUrl = `http://localhost:3000/weather?address=${searchQuery}`;
+  const requestUrl = `/weather?address=${searchQuery}`;
   errorEl.innerHTML = "";
   locationEl.innerHTML = "";
   forecastEl.innerHTML = "";
